@@ -2,7 +2,7 @@
 
 def call() {
     try {
-        return env.JOB_NAME.split("/")[-2].trim()
+        return env.JOB_NAME.split("/")[-1].trim()
     } catch(Exception ex) {
         error "Repo name not found:  " + ex
     }
