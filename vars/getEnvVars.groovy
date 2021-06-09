@@ -2,6 +2,6 @@
 
 def call() {
     for(e in env){
-        echo e + " is " + ${e}
+        println e + " is " + ${e}
     }
 }
